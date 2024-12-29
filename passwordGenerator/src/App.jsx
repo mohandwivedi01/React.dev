@@ -36,8 +36,8 @@ function App() {
     passwordGenerator()
   },[passLength, num, char, passwordGenerator])
   return(
-  <div className='w-full h-screen bg-gray-800 flex items-center justify-center'>
-    <div className='w-full max-w-md bg-gray-700 p-6 rounded-lg shadow-lg text-orange-500 '>
+  <div className='w-full h-screen  flex items-center justify-center' style={{backgroundColor: "#2D4356"}}>
+    <div className='w-full  max-w-md  p-6 rounded-lg shadow-lg py-10' style={{backgroundColor: "#C9DABF", color: "#5F6F65"}}>
       <h2 className='text-2xl font-bold font-sans  text-center mb-4'>Password Generator</h2>
       <div className='flex shadow my-8'>
       <input
@@ -48,21 +48,21 @@ function App() {
         readOnly
         ref={passwordRef}
       />
-      <button onClick={copyPassword} className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0 rounded-md'>
+      <button onClick={copyPassword} className='outline-none text-white px-3 py-0.5 shrink-0 rounded-md' style={{backgroundColor: "#9CA986"}}>
         Copy
       </button>
       </div>
-      <div className='flex text-sm gap-x-3'>
-        <div className='flex items-center gap-x-1'>
+      <div className='flex text-sm gap-x-3 mb-10'>
+        <div className='flex items-center gap-x-1 '>
           <input
             type='range'
             min={6}
             max={32}
             value={passLength}
-            className='cursor-pointer'
+            // className='cursor-pointer'
             onChange={(e) => {setPassLength(e.target.value) }}
           />
-          <label>Length: {passLength}</label>
+          <label className='font-bold'>Length: {passLength}</label>
         </div>
         <div className='flex items-center gap-x-1'>
           <input
@@ -73,9 +73,9 @@ function App() {
               setNum((prev) => !prev);
             }}
           />
-          <label htmlFor='numberInput'>Numbers</label>
+          <label htmlFor='numberInput' className='font-bold'>Numbers</label>
         </div>
-        <div className='flex items-center gap-x-1'>
+        <div className='flex items-center gap-x-1 '>
             <input
               type='checkbox'
               defaultChecked={char}
@@ -84,7 +84,7 @@ function App() {
                 setChar((prev)=> !prev);
               }}
             />
-            <label htmlFor='charaterInput'>Characters</label>
+            <label htmlFor='charaterInput' className='font-bold '>Characters</label>
         </div>
       </div>      
     </div>

@@ -15,7 +15,7 @@ function Github(){
     // }, [])
 
     return (
-        <div className="text-center w-full max-w-3xl mx-auto my-20 bg-black/60 shadow-md rounded-md border text-white py-6 px-10">
+        <div className="text-center w-full max-w-3xl mx-auto my-20 bg-cyan-900 shadow-md rounded-md border text-white py-6 px-10">
             <h1 className="text-orange-500 font-semibold text-4xl mb-6">I'm {data.name}</h1>
             <div className="flex flex-wrap md:flex-nowrap items-center">
                 {/* Left Side: Profile Image */}

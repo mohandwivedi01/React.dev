@@ -7,14 +7,14 @@ function Header(){
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-sky-900 bordder-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                    <Link to="/" className=" items-center hover:bg-gray-200 px-2 pt-1 rounded-lg hover:text-orange-500">
+                    <Link to="/" className=" items-center hover:bg-white/10 px-2 pt-1 rounded-lg hover:text-orange-500">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0WAIVKEFcrYYpLSCj9Kmz96DifFf0MDkdcg&s" className="mr-3 ml-7 h-10 w-16 rounded-lg" alt="Logo"
                     />
                     
                     <h2 className="text-sm text-white hover:text-orange-500 ">SunTrail Adventures</h2>
                     </Link> 
                     <div className="flex items-center lg:order-2">
-                        <Link to="#" className="text-white hover:bg-gray-200 hover:text-orange-600 focus-ring-4 focus-ring-gray-300 font-medium rounded-lg text-sm px4 lg:px-5 py-2 lg:py-2.5 mr-2 focus-outline-none ">Log in</Link>
+                        <Link to="#" className="text-white hover:bg-white/10 hover:text-orange-600 focus-ring-4 focus-ring-gray-300 font-medium rounded-lg text-sm px4 lg:px-5 py-2 lg:py-2.5 mr-2 focus-outline-none ">Log in</Link>
                         <Link to="#" className="text-white bg-orange-600 hover:bg-orange-700 focus-ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 pt-2 lg:py-2.5 mr-2 focus:ouline-none">
                             Get started
                         </Link>
@@ -27,7 +27,7 @@ function Header(){
                             <li>
                                 <NavLink 
                                     to="/"
-                                    className={({isActive}) => `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-500" : "text-white"} border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`}>
+                                    className={({isActive}) => ` hover:bg-white/20 block py-2 px-2 duration-200 ${isActive ? "text-orange-500" : "text-white"} border-b border-gray-100 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 lg:p-0`}>
                                     Home
                                 </NavLink>
                             </li>
